@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #EEF0F4;
+    color: #432000;
+    user-select: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 12px 8px;
+}
+
+
+main > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 70%;
+    height: 40%;
+}
+
+
+#input-field,#add-button{
+    margin: 10px auto;
+    border: none;
+    padding: 20px 18px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    text-align: center;
+    width: 70%;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+#add-button{
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+
+#add-button:hover{
+    background-color: #432000;
+}
+
+
+#input-field {
+    outline: none;
+    background-color: #DCE1EB;
+}
+
+
+#To-do-list{
+    margin: 40px auto;
+    display: flex;
+    gap: 20px 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+}
+
+
+#To-do-list > div {
+    position: relative;
+    flex-grow: 1;
+    font-size: 1,3rem;
+    border: black;
+    text-align: center;
+    padding: 22px 28px;
+    font-weight: bold;
+    background-color: #FFFDF8;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+
+#To-do-list > div:hover{
+    background-color: rgba(255, 228, 196, 0.782);
+}
+
+
+.fa-trash{
+    position: absolute;
+    right: 6px;
+    margin-left: 18px;
+    color: rgb(10, 36, 3);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px){
+    #To-do-list > div {
+        margin: auto 4px;
+    }
+}
